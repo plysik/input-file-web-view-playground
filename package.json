@@ -1,6 +1,6 @@
 {
     "name": "input-file-web-view-playground",
-    "homepage": "https://plysik.github.io/web-view",
+    "homepage": "https://plysik.github.io/input-file-web-view-playground",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
