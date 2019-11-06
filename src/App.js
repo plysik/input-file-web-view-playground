@@ -3,6 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
+    const showAlert = e => alert(e);
     return (
         <div className="App">
             <header className="App-header">
@@ -11,43 +12,22 @@ function App() {
                     Testujemy <code>{`<input type="file"/>`}</code>
                 </p>
                 <p>
-                    <label htmlFor="base">Base</label>{" "}
-                    <input type="file" name="base" id="base" />
-                </p>
-                <p>
-                    <label htmlFor="multiple">Multiple</label>{" "}
-                    <input type="file" name="multiple" id="multiple" multiple />
-                </p>
-                <p>
-                    <label htmlFor="multipleWithAccept">
-                        Multiple with accept
-                    </label>{" "}
+                    <label htmlFor="onChange">onChange</label>{" "}
                     <input
                         type="file"
-                        name="multipleWithAccept"
-                        id="multipleWithAccept"
-                        multiple
-                        accept=".doc,.pdf,.docx,.rtf,.txt,.xls,.ppt,.bmp,.gif,.jpg,.png,.odt,.odp,.ods,.xlsx,.pptx,.pages,.csv,.mp3"
+                        name="onChange"
+                        id="onChange"
+                        onChange={showAlert}
                     />
                 </p>
                 <p>
-                    <label htmlFor="onlyAccept">Only accept</label>{" "}
-                    <input
-                        type="file"
-                        name="onlyAccept"
-                        id="onlyAccept"
-                        accept=".doc,.pdf,.docx,.rtf,.txt,.xls,.ppt,.bmp,.gif,.jpg,.png,.odt,.odp,.ods,.xlsx,.pptx,.pages,.csv,.mp3"
-                    />
-                </p>
-                <p>
-                    <label htmlFor="acceptAll">Accept all</label>{" "}
-                    <code>accept="*"</code>{" "}
-                    <input
-                        type="file"
-                        name="acceptAll"
-                        id="acceptAll"
-                        accept="*"
-                    />
+                    <a
+                        href="http://google.pl"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        nowa karta
+                    </a>
                 </p>
             </header>
         </div>
